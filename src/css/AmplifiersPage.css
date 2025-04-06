@@ -1,0 +1,42 @@
+/* src/pages/AmplifiersPage.css */
+.amplifiers-page .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /* background-color: #f8f9fa; Optional subtle background */
+  }
+  
+  .amplifiers-page .page-header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .amplifiers-grid {
+    display: grid;
+    /* Adjust columns based on screen size */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between cards */
+    max-width: 1200px; /* Optional: Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+    padding: 1rem;
+  }
+  
+  /* Basic button style if using links styled as buttons */
+  .button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.2s ease;
+      margin-top: 0.5rem; /* Space above button */
+  }
+  
+  .button:hover,
+  .button:focus {
+      background-color: #0056b3;
+      color: white; /* Ensure text remains white */
+  }

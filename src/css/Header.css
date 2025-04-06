@@ -1,0 +1,78 @@
+/* src/components/Header.css */
+
+.site-header {
+    background-color: #ffffff; /* Example: White background */
+    padding: 0.75rem 1rem; /* Vertical and horizontal padding */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+    position: sticky; /* Make header stick to top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; /* Ensure it spans full width */
+    box-sizing: border-box; /* Include padding/border in width */
+  }
+  
+  .header-content {
+    max-width: 1200px; /* Match max-width used elsewhere if needed */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between; /* Push logo left, nav right */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Logo Styling */
+  .logo-link {
+    display: inline-block; /* Treat link as block for layout */
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .header-logo {
+    height: 40px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    vertical-align: middle; /* Align with text if you had text instead/as well */
+  }
+  
+  /* Navigation Styling */
+  .main-navigation ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange list items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .main-navigation li {
+    margin-left: 1.5rem; /* Space between navigation items */
+  }
+  
+  .main-navigation li:first-child {
+      margin-left: 0; /* No extra space before the first item */
+  }
+  
+  .main-navigation a {
+    color: #333; /* Default link color */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder text */
+    padding: 0.5rem 0.25rem; /* Add some padding for easier clicking, focus on bottom for underline */
+    position: relative; /* Needed for potential pseudo-element underlines */
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: 2px solid transparent; /* Reserve space for active/hover underline */
+  }
+  
+  /* Hover & Focus States */
+  .main-navigation a:hover,
+  .main-navigation a:focus {
+    color: #007bff; /* Highlight color on hover/focus */
+    /* Optional: Add underline on hover */
+    /* border-bottom-color: #007bff; */
+  }
+  .main-navigation a:focus {
+      outline: 2px solid #007bff; /* Basic focus outline for accessibility */
+      outline-offset: 2px;
+  }
+  
+  
+  /* Active Link State (using the class added by NavLink)

@@ -1,0 +1,103 @@
+/* src/components/AmplifierCard.css */
+.amplifier-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; /* Keep image corners rounded */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack image and info */
+  }
+  
+  .amplifier-image-container {
+      background-color: #f0f0f0; /* Placeholder background */
+      text-align: center; /* Center image if needed */
+      padding: 1rem 0; /* Optional padding around image */
+  }
+  
+  .amplifier-image {
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Control max image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center image */
+    object-fit: contain; /* Or 'cover' depending on desired effect */
+  }
+  
+  .amplifier-info {
+    padding: 1.5rem;
+    flex-grow: 1; /* Allow info section to fill space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .amplifier-name {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .amplifier-short-desc {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .amplifier-detail-desc {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Push features/links towards bottom if card heights vary */
+  }
+  
+  .amplifier-features,
+  .amplifier-specs {
+    margin-bottom: 1rem;
+  }
+  
+  .amplifier-features h3,
+  .amplifier-specs h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.25rem;
+  }
+  
+  .amplifier-features ul,
+  .amplifier-specs ul {
+    list-style: disc; /* Or none if preferred */
+    margin: 0 0 0 1.2rem; /* Indent list items */
+    padding: 0;
+    font-size: 0.95em;
+    color: #555;
+  }
+  .amplifier-specs ul {
+      list-style: none; /* No bullets for specs */
+      margin-left: 0;
+  }
+  
+  .amplifier-features li,
+  .amplifier-specs li {
+    margin-bottom: 0.4rem;
+  }
+  .amplifier-specs li strong {
+      display: inline-block;
+      min-width: 90px; /* Align spec values */
+      color: #333;
+  }
+  
+  
+  .amplifier-price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #007bff; /* Example price color */
+      margin-top: auto; /* Push to bottom if card height varies */
+      padding-top: 1rem; /* Space above price */
+  }
+  
+  .sound-clip-link {
+    margin-top: 1rem;
+    /* Uses .button styles from AmplifiersPage.css or global styles */
+  }
