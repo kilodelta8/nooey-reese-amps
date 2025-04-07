@@ -9,9 +9,10 @@ import Footer from './components/Footer'; // Assuming you have a Footer componen
 // Page Components
 import HomePage from './pages/HomePage';
 import AmplifiersPage from './pages/AmplifiersPage'; // Create this page
-//import CustomBuildsPage from './pages/CustomBuildsPage'; // Create this page
-//import RepairRestorationPage from './pages/RepairRestorationPage'; // Create this page
-import ContactPage from './pages/ContactPage'; // Create this page (to hold InquiryForm)
+import CustomBuildsPage from './pages/CustomBuildsPage'; // Create this page
+import RepairRestorationPage from './pages/RepairRestorationPage'; // Create this page
+import ContactPage from './pages/ContactPage'; // Create this page (to hold InquiryForm)oey Reese Amps cabinets)
+import SpeakerCabinetsPage from './pages/CabinetsPage';
 
 // Styles
 import './App.css'; // Your global styles
@@ -31,6 +32,9 @@ function App(): JSX.Element {
             <Route path="/" element={<HomePage />} />
             <Route path="/amplifiers" element={<AmplifiersPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/repair-restoration" element={<RepairRestorationPage />} />
+            <Route path="/custom" element={<CustomBuildsPage />} />
+            <Route path="/cabinets" element={<SpeakerCabinetsPage />} />
              {/* Optional: Add a 404 Not Found route */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>

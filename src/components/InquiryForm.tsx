@@ -48,6 +48,8 @@ function InquiryForm(): JSX.Element {
     description: '',
   });
 
+  // Add this state to store uploaded files
+  const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [descriptionLength, setDescriptionLength] = useState(0);
@@ -106,6 +108,13 @@ function InquiryForm(): JSX.Element {
     }
   };
 
+  // Add this handler for file input changes
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    if (e.target.files) {
+      setUploadedFiles(Array.from(e.target.files)); // Convert FileList to an array
+    }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setStatus('idle'); // Reset status on new attempt
@@ -155,7 +164,7 @@ function InquiryForm(): JSX.Element {
 
   // --- JSX ---
   return (
-    <form onSubmit={handleSubmit} className="inquiry-form" noValidate> {/* noValidate disables default browser validation bubbles */}
+    <form onSubmit={handleSubmit} className="inquiry-form container" noValidate> {/* noValidate disables default browser validation bubbles */}
       {/* General Submission Status Messages */}
        {status === 'success' && <p className="status-message success">Thank you! Your inquiry has been sent.</p>}
        {status === 'error' && <p className="status-message error">Something went wrong sending your message. Please try again or contact us directly.</p>}
@@ -270,6 +279,26 @@ function InquiryForm(): JSX.Element {
                 {descriptionLength}/{DESCRIPTION_MAX_LENGTH}
             </span>
         </div>
+      </div>
+
+      {/* -- Input Field for Pics -- */}
+      <div className="form-group">
+        <label htmlFor="pictures">Upload Pictures (optional):</label>
+        <input
+          type="file"
+          id="pictures"
+          name="pictures"
+          accept="image/*" // Restrict to image files
+          multiple // Allow multiple file uploads
+          onChange={handleFileChange}
+        />
+        {uploadedFiles.length > 0 && (
+          <ul className="uploaded-files-list">
+            {uploadedFiles.map((file, index) => (
+              <li key={index}>{file.name}</li>
+            ))}
+          </ul>
+        )}
       </div>
 
       {/* -- Submit Button -- */}

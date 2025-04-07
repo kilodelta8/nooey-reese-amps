@@ -25,6 +25,9 @@ function Header(): JSX.Element {
               <NavLink to="/amplifiers">Our Amplifiers</NavLink>
             </li>
             <li>
+              <NavLink to="/cabinets">Cabinets</NavLink>
+            </li>
+            <li>
               <NavLink to="/custom">Custom Builds</NavLink>
             </li>
             <li>

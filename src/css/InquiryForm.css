@@ -91,3 +91,89 @@
   .alternative-contact h2 {
       margin-bottom: 1rem;
   }
+
+  .uploaded-files-list {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    list-style: disc;
+    color: #555;
+  }
+  
+  .uploaded-files-list li {
+    font-size: 0.9rem;
+  }
+
+  /* Style the form container */
+.inquiry-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the left */
+  gap: 1rem; /* Add spacing between form groups */
+  max-width: 600px; /* Optional: Limit the form width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style each form group */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  width: 100%; /* Ensure inputs take full width of the form */
+}
+
+/* Style input, textarea, and file inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Make inputs stretch to the container width */
+  padding: 0.5rem; /* Add padding for better usability */
+  font-size: 1rem; /* Ensure consistent font size */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Style the file input */
+.form-group input[type="file"] {
+  padding: 0; /* Remove padding for file inputs */
+}
+
+/* Style error messages */
+.error-message {
+  color: red;
+  font-size: 0.875rem; /* Slightly smaller font for error messages */
+  margin-top: 0.25rem;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  align-self: flex-start; /* Align the button to the left */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Center the submit button */
+button[type="submit"] {
+  display: block; /* Ensure the button behaves like a block element */
+  margin: 1rem auto; /* Center the button horizontally */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -19,9 +19,6 @@ function Footer(): JSX.Element {
         {/* Optional: Add some quick links */}
         <nav className="footer-nav" aria-label="Footer Navigation">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/amplifiers">Amplifiers</Link></li>
-            <li><Link to="/repair-restoration">Repair & Restoration</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             {/* Add other relevant links if needed, e.g., Privacy Policy */}
           </ul>

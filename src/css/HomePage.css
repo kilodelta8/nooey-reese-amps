@@ -1,0 +1,134 @@
+/* src/pages/HomePage.css (Revised with Darker Text Colors) */
+
+.home-page {
+    /* Center content and limit width */
+    max-width: 900px;
+    margin: 2rem auto; /* Add space top/bottom, center horizontally */
+    padding: 1rem 1.5rem; /* Padding inside the main container */
+    box-sizing: border-box;
+  }
+  
+  /* Header Section */
+  .home-header {
+    text-align: center;
+    margin-bottom: 3rem; /* Space below the header */
+  }
+  
+  .home-logo {
+    display: block; /* Allows centering with margin auto */
+    max-height: 120px; /* Adjust max logo height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 auto 1.5rem auto; /* Center horizontally, space below */
+  }
+  
+  .home-header h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+    margin-bottom: 0.5rem;
+     /* Kept original dark blue-grey, or change to #212529 or #000 */
+  }
+  
+  /* Sections Styling */
+  .home-description,
+  .home-services {
+    margin-bottom: 2.5rem; /* Space between content sections */
+  }
+  
+  .home-description h2,
+  .home-services h2 {
+    font-size: 1.8em;
+    /* CHANGE: Made H2 darker, matching H1 or using near-black */
+     /* Match H1 color for strong heading contrast */
+    /* Alternative: color: #212529; */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0; /* Lighter border color for separation */
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Paragraph Styling */
+  .home-page p {
+    line-height: 1.7; /* Improve readability */
+    /* CHANGE: Made paragraph text darker */
+     /* Common very dark grey (Bootstrap's default body color) */
+    /* Alternative: color: #000000; */ /* Pure black */
+    margin-bottom: 1rem; /* Space below paragraphs */
+  }
+  
+  /* Services List Styling */
+  .home-services ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-services li {
+    margin-bottom: 1.25rem; /* Space between list items */
+    padding-left: 1.5rem; /* Indent text slightly */
+    position: relative; /* For pseudo-element bullets */
+    /* Text color will inherit the darker #212529 from .home-page p */
+  }
+  
+  /* Optional: Custom bullets for the service list */
+  .home-services li::before {
+    content: '✓'; /* Example checkmark bullet */
+    position: absolute;
+    left: 0;
+    top: 0px; /* Adjust vertical alignment */
+    color: #007bff; /* Kept accent color */
+    font-weight: bold;
+  }
+  
+  .home-services li strong {
+    display: block; /* Make the title take its own line */
+    font-weight: 600;
+    /* CHANGE: Ensured strong tag is also dark */
+     /* Dark color, matching H1/H2 */
+    /* Alternative: color: #212529; */
+    margin-bottom: 0.25rem; /* Space between title and description */
+  }
+  
+  /* Call to action styling (if used) */
+  .home-services p:last-of-type { /* Target the last paragraph in services */
+      margin-top: 1.5rem;
+      font-style: italic;
+      /* CHANGE: Made italic text darker than original #555 */
+       /* Dark grey, better contrast */
+      /* Alternative: color: #212529; */ /* Match main body text */
+  }
+  
+  
+  /* --- Responsiveness --- */
+  @media (max-width: 768px) {
+    .home-header h1 {
+      font-size: 2em; /* Slightly smaller heading on smaller screens */
+    }
+  
+    .home-description h2,
+    .home-services h2 {
+      font-size: 1.5em; /* Smaller section headings */
+    }
+  
+    .home-page {
+      padding: 1rem; /* Reduce padding */
+       margin-top: 1rem; /* Reduce top margin */
+    }
+  
+    .home-logo {
+      max-height: 100px; /* Smaller logo */
+    }
+  }
+  
+  @media (max-width: 480px) {
+     .home-header h1 {
+      font-size: 1.8em;
+    }
+     .home-description h2,
+     .home-services h2 {
+      font-size: 1.3em;
+    }
+     .home-services li {
+         padding-left: 1.2rem; /* Adjust indent */
+     }
+      .home-services li::before {
+         top: 2px;
+     }
+  }

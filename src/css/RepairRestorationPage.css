@@ -1,0 +1,196 @@
+/* src/pages/RepairRestorationPage.css */
+
+.repair-restoration-page {
+    max-width: 950px; /* Adjust width as needed */
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  /* Shared Page Header style (can be global or specific) */
+  .repair-restoration-page .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .repair-restoration-page .page-header h1 {
+    font-size: 2.2em; /* Adjust size */
+    margin-bottom: 0.5rem;
+    color: #e9ecef; /* Use dark text color */
+  }
+  
+  .repair-restoration-page .page-header p {
+    font-size: 1.1em;
+    color: #e9ecef; /* Darker paragraph text */
+    max-width: 700px; /* Limit width of intro paragraph */
+    margin: 0 auto; /* Center intro paragraph */
+  }
+  
+  
+  /* Intro/Philosophy Section */
+  .intro-section {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background-color: #f8f9fa; /* Optional light background */
+      border-radius: 8px;
+  }
+  .intro-section h2 {
+      margin-bottom: 1rem;
+      color: #1A2B3C;
+  }
+  .intro-section p {
+      color: #212529;
+      line-height: 1.7;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  /* Service Sections Styling */
+  .service-section {
+    display: flex;
+    flex-direction: column; /* Stack image and text by default */
+    gap: 2rem; /* Space between image and text */
+    margin-bottom: 3rem;
+    padding-bottom: 2rem; /* Space below section */
+    border-bottom: 1px solid #eee; /* Separator line */
+  }
+  
+  /* Alternate background or layout for sections */
+  .service-section.amp-services {
+    /* background-color: #fdfdfd; Optional different bg */
+  }
+  .service-section.radio-services {
+     /* background-color: #f9f9f9; Optional different bg */
+  }
+  
+  
+  .service-section .service-image {
+    display: block;
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    max-height: 300px; /* Limit image height */
+    object-fit: cover; /* Or 'contain' */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 auto; /* Center image when stacked */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-description h2 {
+    font-size: 1.7em;
+    margin-top: 0; /* Remove top margin if image is first */
+    margin-bottom: 1rem;
+    color: #e9ecef;
+  }
+  
+  .service-description p,
+  .service-description ul {
+    color: #e9ecef; /* Use dark text color */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description ul {
+    list-style: disc;
+    margin-left: 1.2rem; /* Indent list */
+    padding: 0;
+  }
+  
+  .service-description li {
+    margin-bottom: 0.6rem;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e9ecef; /* Example light grey background */
+    border-radius: 8px;
+    margin-top: 2rem; /* Space above CTA */
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8em;
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    color: #212529;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 1.5rem auto; /* Center text and add space below */
+  }
+  
+  /* Style the CTA button (ensure .button class is defined globally or here) */
+  .cta-button.button {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #007bff; /* Match other buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .cta-button.button:hover,
+  .cta-button.button:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    color: #1A2B3C;
+  }
+  
+  /* --- Responsiveness --- */
+  @media (min-width: 768px) {
+    .service-section {
+      flex-direction: row; /* Place image and text side-by-side */
+      align-items: flex-start; /* Align items to the top */
+    }
+  
+    .service-section .service-image {
+      flex: 0 0 300px; /* Fixed width for the image */
+      max-width: 300px;
+      margin: 0; /* Reset margin */
+    }
+  
+    /* Optional: Alternate image side */
+    .service-section.radio-services {
+      flex-direction: row-reverse; /* Put radio image on the right */
+    }
+  
+     .service-section.radio-services .service-image {
+         margin-left: 2rem; /* Ensure gap when reversed */
+         margin-right: 0;
+     }
+      .service-section.amp-services .service-image {
+          margin-right: 2rem; /* Ensure gap */
+          margin-left: 0;
+      }
+  
+  
+    .service-description {
+      flex: 1; /* Allow text content to take remaining space */
+    }
+     .service-description h2 {
+        margin-top: 0; /* No top margin when side-by-side */
+     }
+  }
+  
+  @media (max-width: 480px) {
+      .repair-restoration-page .page-header h1 {
+          font-size: 1.8em;
+      }
+      .service-description h2 {
+          font-size: 1.5em;
+      }
+      .cta-section h2 {
+          font-size: 1.6em;
+      }
+       .repair-restoration-page {
+           padding: 1rem;
+       }
+  }

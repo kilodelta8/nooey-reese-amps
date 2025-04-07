@@ -1,0 +1,44 @@
+/* src/pages/SpeakerCabinetsPage.css */
+/* --- Reusing styles similar to AmplifiersPage.css --- */
+
+.speaker-cabinets-page .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  
+  .speaker-cabinets-page .page-header h1 {
+    margin-bottom: 0.5rem;
+    /* Use consistent heading styles */
+     color: #adafb1;
+     font-size: 2.2em;
+  }
+  .speaker-cabinets-page .page-header p {
+     color: #b0abab;
+     font-size: 1.1em;
+  }
+  
+  
+  /* Can reuse the grid style from amplifier page or define here */
+  .cabinets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between cards */
+    max-width: 1200px; /* Optional: Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+    padding: 1rem;
+  }
+  
+  /* --- Reuse button styles if needed --- */
+  /* .button { ... } */
+  /* Remove bullet points from unordered lists */
+.speaker-cabinets-page ul {
+  list-style: none; /* Removes the bullet points */
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+}
+
+/* Optional: Add spacing between list items */
+.speaker-cabinets-page ul li {
+  margin-bottom: 0.5rem;
+}

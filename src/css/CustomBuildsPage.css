@@ -1,0 +1,195 @@
+/* src/pages/CustomBuildsPage.css */
+
+
+.custom-builds-page {
+    max-width: 950px; /* Adjust width as needed */
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  /* Shared Page Header style */
+  .custom-builds-page .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .custom-builds-page .page-header h1 {
+    font-size: 2.2em; /* Adjust size */
+    margin-bottom: 0.5rem;
+    color: #f8f9fa; /* Use dark text color */
+  }
+  
+  .custom-builds-page .page-header p {
+    font-size: 1.1em;
+    color: #f8f9fa; /* Darker paragraph text */
+    max-width: 700px; /* Limit width */
+    margin: 0 auto; /* Center */
+  }
+  
+  /* Intro Section */
+  .intro-section {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background-color: #f8f9fa; /* Optional light background */
+      border-radius: 8px;
+  }
+  .intro-section h2 {
+      margin-bottom: 1rem;
+      color: #1A2B3C;
+  }
+  .intro-section p {
+      color: #212529; /* Dark text */
+      line-height: 1.7;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  /* Service Sections Styling */
+  .service-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem; /* Space below section */
+    border-bottom: 1px solid #eee; /* Separator line */
+  }
+  .service-section:last-of-type { /* No border on last service section */
+      border-bottom: none;
+      padding-bottom: 0;
+  }
+  
+  .service-description h2 {
+    font-size: 1.7em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+  }
+  
+  .service-description p,
+  .service-description ul {
+    color: #f8f9fa; /* Use dark text color */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description ul {
+    list-style: disc; /* Or square, or custom */
+    margin-left: 1.2rem; /* Indent list */
+    padding: 0;
+  }
+  
+  .service-description li {
+    margin-bottom: 0.75rem; /* Slightly more space for list items */
+  }
+  .service-description li strong {
+      color: #f8f9fa; /* Ensure strong tags are dark */
+  }
+  
+  /* Image Placeholder Styling */
+  .placeholder-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef; /* Light grey background */
+    color: #6c757d; /* Muted text color */
+    border: 1px dashed #ced4da; /* Dashed border */
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem; /* Space below placeholder */
+    min-height: 200px; /* Minimum height */
+  }
+  .placeholder-image.wide-placeholder {
+      min-height: 250px; /* Taller for showcase */
+  }
+  .placeholder-image.small-placeholder {
+      max-width: 400px; /* Limit width for smaller placeholders */
+      margin-left: auto; /* Center if needed */
+      margin-right: auto;
+  }
+  
+  
+  /* The Process Section */
+  .process-section {
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background-color: #f0f5fa; /* Slightly different background */
+      border-radius: 8px;
+      text-align: center;
+  }
+  .process-section h2 {
+       font-size: 1.7em;
+       color: #1A2B3C;
+       margin-bottom: 1rem;
+  }
+  .process-section p {
+      color: #212529;
+      line-height: 1.7;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  /* Call to Action Section Styling (Consistent with other pages) */
+  .cta-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #e9ecef; /* Example light grey background */
+    border-radius: 8px;
+    margin-top: 3rem; /* Space above CTA */
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8em;
+    color: #1A2B3C;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    color: #212529;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 1.5rem auto; /* Center text and add space below */
+  }
+  
+  .cta-button.button {
+    /* Assuming global .button styles exist - otherwise, copy styles here */
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .cta-button.button:hover,
+  .cta-button.button:focus {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* --- Responsiveness --- */
+  /* Add media queries similar to other pages if needed,
+     adjusting font sizes, padding, and maybe placeholder sizes */
+  @media (max-width: 768px) {
+      .custom-builds-page .page-header h1 {
+          font-size: 2em;
+      }
+      .service-description h2, .process-section h2 {
+          font-size: 1.5em;
+      }
+       .cta-section h2 {
+          font-size: 1.6em;
+      }
+      .custom-builds-page {
+          padding: 1rem;
+      }
+  }
+
+  

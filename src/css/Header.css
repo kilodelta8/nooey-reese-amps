@@ -1,7 +1,8 @@
 /* src/components/Header.css */
 
 .site-header {
-    background-color: #ffffff; /* Example: White background */
+    background-color: #2c3e50; /* Example: White background */
+    color: #ecf0f1; /* Example text color (light grey) */
     padding: 0.75rem 1rem; /* Vertical and horizontal padding */
     border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
@@ -53,7 +54,7 @@
   }
   
   .main-navigation a {
-    color: #333; /* Default link color */
+    color: #ecf0f1; /* Example text color (light grey) */
     text-decoration: none;
     font-weight: 500; /* Slightly bolder text */
     padding: 0.5rem 0.25rem; /* Add some padding for easier clicking, focus on bottom for underline */

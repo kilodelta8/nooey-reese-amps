@@ -8,13 +8,13 @@ import '../css/AmplifiersPage.css'; // For styling the overall page layout
 // Ideally, import this from a separate file (e.g., src/data/amplifiers.ts)
 const amplifierData: Amplifier[] = [
   {
-    id: 'nra-growler-15',
-    name: 'NRA Growler 15',
-    imageUrl: '/images/amp-placeholder-1.jpg', // <-- Replace with actual image path
+    id: 'nra-november-25',
+    name: 'NRA November 25',
+    imageUrl: 'src/assets/amplifier.png', // <-- Replace with actual image path
     shortDescription: 'Punchy low-wattage head with versatile gain stages.',
-    detailedDescription: 'The Growler 15 delivers rich harmonic content and dynamic touch sensitivity, perfect for studio work and small gigs. From chimey cleans to saturated roar, it covers impressive ground.',
+    detailedDescription: 'The November 25 delivers rich harmonic content and dynamic touch sensitivity, perfect for studio work and small gigs. From chimey cleans to saturated roar, it covers impressive ground.',
     keyFeatures: [
-      '15 Watts Class A/B',
+      '25 Watts Class A/B',
       'Hand-wired Turret Board Construction',
       'Gain, Treble, Mid, Bass, Master Volume Controls',
       'Selectable Voicing Switch (Classic/Modern)',
@@ -22,32 +22,32 @@ const amplifierData: Amplifier[] = [
     ],
     specs: {
         Power: '15W',
-        Tubes: '2x EL84, 3x 12AX7',
+        Tubes: '4x EL84, 3x 12AX7, 1x 5ar4',
         Outputs: '4, 8, 16 Ohm Speaker Jacks',
-        Dimensions: '18" x 9" x 8"',
+        Dimensions: '24.5" x 11.5" x 9.5"',
         Weight: '25 lbs',
     },
-    price: '$1,499',
+    price: '$1,999',
     soundClipUrl: 'https://example.com/soundclip1', // <-- Optional: Replace link
   },
   {
-    id: 'nra-toneking-45',
-    name: 'NRA ToneKing 45',
-    imageUrl: '/images/amp-placeholder-2.jpg', // <-- Replace with actual image path
+    id: 'nra-fatface-50',
+    name: 'NRA FatFace 50',
+    imageUrl: 'src/assets/amplifier.png', // <-- Replace with actual image path
     shortDescription: 'Classic American clean tones with lush tube reverb.',
     detailedDescription: 'Inspired by mid-60s circuits, the ToneKing 45 offers sparkling cleans, warm breakup, and a deep, dimensional reverb. The ideal platform for pedals and capturing timeless sounds.',
     keyFeatures: [
-      '45 Watts Class A/B',
+      '50 Watts Class A/B',
       'Point-to-Point Wiring',
       'Volume, Treble, Bass Controls',
       'Tube-Driven Spring Reverb',
-      'Solid Pine Cabinet',
+      'Solid Birch Cabinet',
     ],
      specs: {
-        Power: '45W',
-        Tubes: '2x 6L6GC, 4x 12AX7, 1x 12AT7',
+        Power: '50W',
+        Tubes: '2x 6L6GC, 2x 12AX7, 1x 12AY7',
         Outputs: '4, 8 Ohm Speaker Jacks',
-        Dimensions: '24" x 10" x 9"',
+        Dimensions: '24.5" x 11.5" x 9.5"',
         Weight: '38 lbs',
     },
      price: '$2,199',

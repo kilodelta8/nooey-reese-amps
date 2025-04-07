@@ -101,3 +101,15 @@
     margin-top: 1rem;
     /* Uses .button styles from AmplifiersPage.css or global styles */
   }
+
+  /* Remove bullet points from the unordered list */
+.amplifier-features ul {
+  list-style: none; /* Removes the bullet points */
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+}
+
+/* Optional: Add spacing between list items */
+.amplifier-features ul li {
+  margin-bottom: 0.5rem;
+}
